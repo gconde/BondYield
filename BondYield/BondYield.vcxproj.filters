@@ -36,16 +36,14 @@
     <ClCompile Include="BondYieldForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BondMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="BondYieldForm.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <QtUic Include="BondYieldForm.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="BondYieldForm.qrc">
@@ -54,5 +52,13 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="BondYield.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BondMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleValidator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

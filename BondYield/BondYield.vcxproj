@@ -113,6 +113,7 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BondMath.cpp" />
     <ClCompile Include="BondYieldForm.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -120,13 +121,14 @@
     <QtMoc Include="BondYieldForm.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="BondYieldForm.ui" />
-  </ItemGroup>
-  <ItemGroup>
     <QtRcc Include="BondYieldForm.qrc" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="BondYield.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BondMath.h" />
+    <ClInclude Include="DoubleValidator.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
