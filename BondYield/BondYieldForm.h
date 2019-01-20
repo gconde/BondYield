@@ -7,7 +7,9 @@
 
 /*!
  * Class for all the Qt GUI elements. It performs validation and imposed limits on numerical
- * input which greatly simplifies validation. The limits are chosen to be reasonable.
+ * input which greatly simplifies validation. No destructor is explicitly defined since all
+ * GUI controls become a child of the main display widget which deletes all its children upon
+ * exit.
  * 
  */
 class BondYieldForm : public QDialog

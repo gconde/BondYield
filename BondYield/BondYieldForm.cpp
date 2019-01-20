@@ -156,8 +156,7 @@ void BondYieldForm::slot_mode_change(bool checked)
         QString tmp = leRate_->text();
         bond_layout_->removeRow(bond_layout_->rowCount() - 1);
         leRate_ = new QLineEdit();
-        leRate_->setValidator(new QDoubleValidator(0.0f, 100.f, 10));
-        leRate_->setMaxLength(20);
+        leRate_->setValidator(new DoubleValidator(0.0f, 100.f, 10));
         leRate_->setText(tmp);
         if (radPrice_->isChecked())
         {
