@@ -8,3 +8,4 @@ To build on Linux be sure to have installed the Qt5 development libraries for yo
 yum install qt5-qtbase-devel
 Then run the build.sh script which will create a makefile and execute the appropriate targets.
 
+Doxygen documentation is available here: https://gconde.github.io/BondYield/
