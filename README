@@ -1,0 +1,10 @@
+Windows Build
+---------------------------------------
+To build on Windows install Qt at least version 5.10. The project files are Visual Studio 2017 which is the recommended version to use. Also install the Qt visual studio add-in which can be found on the Visual Studio Marketplace. Open the solution in Visual Studio and build the usual way.
+
+Linux Build
+---------------------------------------
+To build on Linux be sure to have installed the Qt5 development libraries for your distribution. For a Red Hat distribution that uses yum the command is:
+yum install qt5-qtbase-devel
+Then run the build.sh script which will create a makefile and execute the appropriate targets.
+

@@ -11,7 +11,7 @@ BondYieldForm::BondYieldForm(QWidget *parent)
     QVBoxLayout *main_layout_ = new QVBoxLayout();
     setLayout(main_layout_);
     setMinimumSize(350, 430);
-    setMaximumSize(450, 430);
+    setMaximumSize(450, 600);
     // layout for bond properties groupbox
     gbBondProps_ = new QGroupBox(tr("Bond Properties"));
     bond_layout_ = new QFormLayout();
