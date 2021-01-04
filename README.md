@@ -5,6 +5,12 @@ To build on Windows install Qt at least version 5.10. The project files are Visu
 ### Linux Build
 ---
 To build on Linux be sure to have installed the Qt5 development libraries for your distribution as well as developer tools such as compiler, build tools, etc. Then run the build.sh script which will create a makefile and execute the appropriate targets.
+
+Alternatively a Dockerfile is included if you don't have and/or don't want to install all the dependencies. Example from the Dockerfile directory run:
+```
+docker build -t bond_yield-app .
+docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" bond_yield-app
+```
 ### Code Documentation
 ---
 Doxygen documentation is available here: https://gconde.github.io/BondYield/
@@ -43,6 +49,7 @@ This bond pricing equation can be generalized. For a particular bond with a coup
 ![\mathit{Price}=\frac{C}{{(1+r)}^{1}}+\frac{C}{{(1+r)}^{2}}+\frac{C}{{(1+r)}^{3}}+\cdots +\frac{C}{{(1+r)}^{N}}+\frac{F}{{(1+r)}^{N}}](https://latex.codecogs.com/svg.latex?%5Cmathit%7BPrice%7D%3D%5Cfrac%7BC%7D%7B%7B%281&plus;r%29%7D%5E%7B1%7D%7D&plus;%5Cfrac%7BC%7D%7B%7B%281&plus;r%29%7D%5E%7B2%7D%7D&plus;%5Cfrac%7BC%7D%7B%7B%281&plus;r%29%7D%5E%7B3%7D%7D&plus;%5Ccdots%20&plus;%5Cfrac%7BC%7D%7B%7B%281&plus;r%29%7D%5E%7BN%7D%7D&plus;%5Cfrac%7BF%7D%7B%7B%281&plus;r%29%7D%5E%7BN%7D%7D)
 
 ### Implementation
+---
 A GUI is implemented with Qt for ease of use.
 
 The math for the bond price is straightforward. The calculation for the rate requires a numerical approach. Two such approaches are implemented. There is an iterative method which arrives at a solution linearly and a superior yield algorithm which is discussed in detail here: [Superseding Newton with a Superior Yield Algorithm by Chris Deeley :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1253166) Either method can be used and the time to convergence is also reported to verify performance.

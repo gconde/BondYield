@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = BondYield
-DESTDIR = ../x64/Release
+DESTDIR = ./
 QT += core gui widgets
 CONFIG += release
 DEFINES += _UNICODE QT_DLL QT_WIDGETS_LIB
