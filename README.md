@@ -8,6 +8,7 @@ To build on Linux be sure to have installed the Qt5 development libraries for yo
 
 Alternatively a Dockerfile is included if you don't have and/or don't want to install all the dependencies. Example from the Dockerfile directory run:
 ```
+sudo systemctl start docker.service
 docker build -t bond_yield-app .
 docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" bond_yield-app
 ```
