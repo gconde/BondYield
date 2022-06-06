@@ -1,6 +1,6 @@
 #include "BondYieldForm.h"
 
-#include <QIntValidator>
+#include <QtGui/QIntValidator>
 #include "DoubleValidator.hpp"
 #include "BondMath.h"
 

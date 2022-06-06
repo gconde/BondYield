@@ -1,9 +1,9 @@
 #ifndef __BONDYIELDFORM_H__
 #define __BONDYIELDFORM_H__
 
-#include <QObject>
-#include <QtWidgets>
-#include <QString>
+#include <QtCore/QObject>
+#include <QtWidgets/QtWidgets>
+#include <QtCore/QString>
 
 /*!
  * Class for all the Qt GUI elements. It performs validation and imposed limits on numerical

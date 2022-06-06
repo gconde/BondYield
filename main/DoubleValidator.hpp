@@ -1,7 +1,7 @@
 #ifndef __DOUBLEVALIDATOR_H__
 #define __DOUBLEVALIDATOR_H__
 
-#include <QDoubleValidator>
+#include <QtGui/QDoubleValidator>
 
 /*!
  * This class is needed since the base class returns QValidator::Intermediate

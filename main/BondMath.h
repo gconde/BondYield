@@ -1,7 +1,7 @@
 #ifndef __BONDMATH_H__
 #define __BONDMATH_H__
 
-#include <QtMath>
+#include <QtCore/QtMath>
 
 /*!
  * A static class for calculating bond price and yield. Validation of input

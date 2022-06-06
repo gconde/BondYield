@@ -1,6 +1,6 @@
 #include "BondMath.h"
 
-#include <QElapsedTimer>
+#include <QtCore/QElapsedTimer>
 
 int BondMath::interations_ = 0;
 
